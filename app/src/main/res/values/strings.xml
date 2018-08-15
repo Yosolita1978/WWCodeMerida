@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WWCode Mérida</string>
+
+    <!-- Temporal strings to view the fragments -->
+    <string name="hello_conference_fragment">Hello conference fragment</string>
+
+    <!-- Temporal strings to view the fragments -->
+    <string name="hello_program_fragment">Hello Program fragment</string>
+
+    <!-- Temporal strings to view the fragments -->
+    <string name="hello_people_fragment">Hello People fragment</string>
+
+    <!-- Temporal strings to view the fragments -->
+    <string name="hello_venue_fragment">Hello Venue fragment</string>
+
+    <!-- Temporal strings to view the fragments -->
+    <string name="hello_sponsors_fragment">Hello Sponsors fragment</string>
+
+    <string name="conference">WWCode Mérida</string>
+    <string name="program">Program</string>
+    <string name="people">Speakers</string>
+    <string name="venue">Venue</string>
+    <string name="sponsors">Sponsors</string>
+    <string name="language">Language</string>
+    <string name="spanish">Spanish</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
