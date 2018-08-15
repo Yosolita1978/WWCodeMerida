@@ -10,7 +10,14 @@
     <color name="impact">#f9a825</color>
     <color name="white_backgrund">#ffffff</color>
     <color name="black_backgrund">#000000</color>
-    <color name="startbutton">#0f7663</color>
+    <color name="startbutton">#00bcad</color>
+    <color name="endtbutton">#00bcad</color>
+
+
+
+    <color name="textOnPrimary">#000000</color>
+    <color name="textOnAccent">#ffffff</color>
+    <color name="text">#4a4a4a</color>
 
 
 </resources>

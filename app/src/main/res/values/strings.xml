@@ -21,9 +21,14 @@
     <string name="people">Speakers</string>
     <string name="venue">Venue</string>
     <string name="sponsors">Sponsors</string>
-    <string name="language">Language</string>
+    <string name="registro">Registro</string>
     <string name="spanish">Spanish</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Info about the event -->
+    <string name="about">Women Who Code es una organización sin fines de lucro, dedicada a inspirar a mujeres para introducirse y  sobresalir en el área de tecnologías de la información.\n\nEn Mérida, comenzamos las actividades el 4 de Octubre del 2014. A partir de esa fecha se han impartido talleres de baby steps, frontend, arduino, android, php, base de datos, liderazgo, social media y robótica para niñas, entre otros.</string>
+    <string name="event_info">Nuestro evento de aniversario tendrá lugar el sábado 20 de Octubre.\n\nEl evento es gratuito, con cupo limitado, requerimos que te registres para asegurar tu lugar.</string>
+    <string name="tittle_event">2do Encuentro de Mujeres en las Tecnologías</string>
+    <string name="urlMeetup">https://www.meetup.com/wwcodemerida/events/251651354/</string>
+
+
 </resources>
