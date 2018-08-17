@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_layout"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_8dp">
+
+    <TextView
+        android:id="@+id/text_hours"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/buttonstyle"
+        android:textAllCaps="true"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_small"
+        android:textStyle="bold"
+        tools:text="@string/start_hour_event_4" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="@dimen/list_layout"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/conference_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            tools:text="@string/type_event_4" />
+
+        <TextView
+            android:id="@+id/conference_author"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_8dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/textOnPrimary"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            tools:text="@string/author_event_4" />
+
+        <TextView
+            android:id="@+id/conference_description"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/text"
+            android:textSize="@dimen/font_small"
+            tools:text="@string/description_event_4" />
+
+    </LinearLayout>
+
+</LinearLayout>

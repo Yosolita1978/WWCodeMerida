@@ -30,5 +30,109 @@
     <string name="tittle_event">2do Encuentro de Mujeres en las Tecnologías</string>
     <string name="urlMeetup">https://www.meetup.com/wwcodemerida/events/251651354/</string>
 
+    <!-- First Conference -->
+    <string name="start_hour_event_one">08:00</string>
+    <string name="end_hour_event_one">08:45</string>
+    <string name="type_event_one">Registro y coffee break</string>
+    <string name="name_event_one">Registro y coffee break</string>
+    <string name="description_event_one">Si llegas y no has desayunado, gracias a nuestros patrocinadores te ofreceremos un pequeño coffee break para que estes a tiempo en las conferencias.</string>
+    <string name="author_event_one">Women Who Code Mérida</string>
+
+    <!-- Second Conference -->
+    <string name="start_hour_event_two">08:45</string>
+    <string name="end_hour_event_two">09:00</string>
+    <string name="type_event_two">Bienvenida</string>
+    <string name="name_event_two">Bienvenida</string>
+    <string name="description_event_two">Se dará la bienvenida al evento, así cómo la presentación de invitados</string>
+    <string name="author_event_two">Women Who Code Mérida</string>
+
+    <!-- Third Conference -->
+    <string name="start_hour_event_3">09:10</string>
+    <string name="end_hour_event_3">09:50</string>
+    <string name="type_event_3">Agricultura Digital</string>
+    <string name="name_event_3">Agricultura Digital</string>
+    <string name="description_event_3">La contaminación, el calentamiento global, la deforestación y el crecimiento de la población han sido considerados los grandes retos de la era moderna. Debido a esto, en los últimos años ha crecido el interés por el mejor aprovechamiento de los recursos naturales, convirtiéndose en un tema relevante. En este sentido, los avances tecnológicos han aportado nuevas e innovadoras soluciones combinando las TI con las ciencias naturales, para poder proporcionar alternativas que permitan limitar los efectos de la huella humana en el planeta. De esta fusión nace el término Agricultura Digital, que incluye la digitalización de la actividad agrícola, con la finalidad de integrar sistemas que combinen la recolección de datos, el procesamiento de información, la transmisión y el control en la gestión automática de la información con la finalidad de producir mejores cultivos con el empleo eficiente de los recursos.</string>
+    <string name="author_event_3">Dra. Rocío Ceballos</string>
+
+    <!-- Four Conference -->
+    <string name="start_hour_event_4">09:50</string>
+    <string name="end_hour_event_4">11:10</string>
+    <string name="type_event_4">Mujeres EvOluc1onando Tecnol0g1camente</string>
+    <string name="name_event_4">Mujeres EvOluc1onando Tecnol0g1camente</string>
+    <string name="description_event_4">Como las mujeres han cambiado el área de tecnología desde tiempos remotos hasta la actualidad, posicionándose en distintas áreas e inclusive formando empresas de tecnología.</string>
+    <string name="author_event_4">Dra. Marlene Méndez</string>
+
+    <!-- Five Conference -->
+    <string name="start_hour_event_5">10:30</string>
+    <string name="end_hour_event_5">11:10</string>
+    <string name="type_event_5">Maternidad y Tecnologías</string>
+    <string name="name_event_5">Maternidad y Tecnologías</string>
+    <string name="description_event_5">Actualmente estamos cada días más involucrados en el área de las tecnologías, también más mujeres estamos siendo parte de los equipos que desarrollan estas tecnologías que están innovando el mundo. Pero ¿cómo es la vida de una mujer cuando es mamá? Ya que nuestro instinto o naturaleza humana nos lleva a desempeñar este rol. El objetivo es mostrar cómo se puede ser una profesionista de tecnología, de forma paralela con rol de mamá.</string>
+    <string name="author_event_5">LCC. Yelmy Pech</string>
+
+    <!-- Six Conference -->
+    <string name="start_hour_event_6">11:10</string>
+    <string name="end_hour_event_6">11:50</string>
+    <string name="type_event_6">Creando experiencias para conectar con mis usuarios</string>
+    <string name="name_event_6">Creando experiencias para conectar con mis usuarios</string>
+    <string name="description_event_6">Actualmente no tenemos una descripción de esta conferencia. </string>
+    <string name="author_event_6">Ing. Grecia Castaldi</string>
+
+    <!-- Seven Conference -->
+    <string name="start_hour_event_7">11:50</string>
+    <string name="end_hour_event_7">12:30</string>
+    <string name="type_event_7">Las Mujeres y el Comercio Electrónico</string>
+    <string name="name_event_7">CLas Mujeres y el Comercio Electrónico</string>
+    <string name="description_event_7">Es claro que las mujeres somos buenas comprando, ¿cierto?, pero no es la única forma en la que participamos del comercio electrónico. En esta charla te platicaré de las habilidades innatas que tenemos las mujeres y algunas áreas de oportunidad en las que podrías participar en el comercio electrónico; también hablaré de algunas mujeres que han destacado, de las que te puedes inspirar. </string>
+    <string name="author_event_7">M.C.C. Ana Luz Loyo</string>
+
+    <!-- Eight Conference -->
+    <string name="start_hour_event_8">12:30</string>
+    <string name="end_hour_event_8">13:10</string>
+    <string name="type_event_8">Mesa Panel: Mujeres, Liderazgo, Emprendimiento y Tecnología</string>
+    <string name="name_event_8">Mesa Panel: Mujeres, Liderazgo, Emprendimiento y Tecnología</string>
+    <string name="description_event_8">Es claro que las mujeres somos buenas comprando, ¿cierto?, pero no es la única forma en la que participamos del comercio electrónico. En esta charla te platicaré de las habilidades innatas que tenemos las mujeres y algunas áreas de oportunidad en las que podrías participar en el comercio electrónico; también hablaré de algunas mujeres que han destacado, de las que te puedes inspirar. </string>
+    <string name="author_event_8">Lic. Ericka López, Lic. Aracelly Ramirez, Lic. Mariel Soberanis, Ing. Vanessa Herrera, Ing. Flor González, Dra. Mayra Trejo, Lic. Alejandrina Caamal Solís</string>
+
+    <!-- Nine Conference -->
+    <string name="start_hour_event_9">13:10</string>
+    <string name="end_hour_event_9">14:00</string>
+    <string name="type_event_9">Break</string>
+    <string name="name_event_9">Break</string>
+    <string name="description_event_9">Estar todo día en el evento puede ser muy agotador, por ello gracias a nuestros patrocinadores te estaremos brindando un pequeño almuerzo. </string>
+    <string name="author_event_9">Coffee Break</string>
+
+    <!-- Ten Conference -->
+    <string name="start_hour_event_10">14:00</string>
+    <string name="end_hour_event_10">14:40</string>
+    <string name="type_event_10">¿Cómo ser fullstack?</string>
+    <string name="name_event_10">¿Cómo ser fullstack?</string>
+    <string name="description_event_10">Actualmente no tenemos una descripción de esta conferencia.</string>
+    <string name="author_event_10">Ing. Loyda Luis</string>
+
+    <!-- Eleven Conference -->
+    <string name="start_hour_event_11">14:40</string>
+    <string name="end_hour_event_11">15:20</string>
+    <string name="type_event_11">Mis encuentros con la innovación tecnológica</string>
+    <string name="name_event_11">Mis encuentros con la innovación tecnológica</string>
+    <string name="description_event_11">Después de muchos años de trabajar y vivir sumergida en un medio académico de universidades y centros de investigación, me llegó la inesperada invitación de probarme en el mundo empresarial como gerente de innovación tecnológica. En esta charla les contaré cómo me ha ido en esta interesante aventura.</string>
+    <string name="author_event_11">Dra. Silvia Fernández</string>
+
+    <!-- Twelve Conference -->
+    <string name="start_hour_event_12">15:20</string>
+    <string name="end_hour_event_12">16:20</string>
+    <string name="type_event_12">Realidad Virtual en la Web</string>
+    <string name="name_event_12">Realidad Virtual en la Web</string>
+    <string name="description_event_12">¿Cómo sería la realidad virtual (VR) en la Web? Hoy en día hacemos clic en enlaces para saltar de página en página. Desafortunadamente, sólo hay pocos desarrolladores WebGL en el mundo que saben crear experiencias 3D altamente interactivas. Pero hay potencialmente millones de desarrolladores web, diseñadores web y artistas 3D que anhelan una herramienta para hacer la creación de contenido VR tan fácil como construir una página web. Por eso hablaremos de Aframe. Es un framework Open Source para crear fácilmente experiencias 3D y VR en la Web, permitiéndonos crear escenas con HTML declarativo que hoy en día funciona en la mayoria de los exploradores.</string>
+    <string name="author_event_12">Ing. Yuliana Reyna Jiménez</string>
+
+    <!-- Thirteen Conference -->
+    <string name="start_hour_event_13">16:00</string>
+    <string name="end_hour_event_13">17:00</string>
+    <string name="type_event_13">Cierre</string>
+    <string name="name_event_13">Cierre</string>
+    <string name="description_event_13">Agradecimiento a los asistentes, ponentes, patrocinadores, invitados. Posterior se hará el corte del pastel conmemorativo al tercer aniversario de la comunidad en Mérida</string>
+    <string name="author_event_13">Women Who Code Mérida</string>
+
 
 </resources>
