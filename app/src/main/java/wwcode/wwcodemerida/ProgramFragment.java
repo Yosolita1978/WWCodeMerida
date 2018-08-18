@@ -4,6 +4,7 @@ package wwcode.wwcodemerida;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,22 +40,26 @@ public class ProgramFragment extends Fragment {
         }
 
 
-        //Start the Placeadapter and the ListView
-        ConferenceAdapter conferencesAdapter = new ConferenceAdapter(getContext(), conferenceArrayList);
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //Start the Conferenceadapter and the ListView
+        ConferenceAdapter mAdapter = new ConferenceAdapter(getContext(), conferenceArrayList);
+
+        ListView mListView = (ListView) rootView.findViewById(R.id.list);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                //Using bundle to send two extras with the intent
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                //Using bundle to send one extra with the intent
+
+                Intent intent = new Intent(getActivity(), SingleConferenceActivity.class);
                 Bundle extras = new Bundle();
-                extras.putInt("indexPlaceSelected", position);
+                extras.putInt("indexConfSelected", position);
                 intent.putExtras(extras);
+//                Log.d("LOG", Integer.toString(position));
                 startActivity(intent);
             }
         });
 
-        listView.setAdapter(conferencesAdapter);
+        mListView.setAdapter(mAdapter);
 
         return  rootView;
     }

@@ -34,9 +34,10 @@
 
     <!-- Single Place Activity Dimens -->
     <dimen name="relative_layout_height">250dp</dimen>
-    <dimen name="imag_layout_height">170dp</dimen>
+    <dimen name="imag_layout_height">70dp</dimen>
     <dimen name="card_layout_height">380dp</dimen>
     <dimen name="button_layout_height">75dp</dimen>
+    <dimen name="image_layout_with">360dp</dimen>
 
     <!-- Conference Fragment Dimens -->
     <dimen name="cardview_two_layout_height">250dp</dimen>
