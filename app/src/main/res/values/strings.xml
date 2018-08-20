@@ -135,4 +135,21 @@
     <string name="author_event_13">Women Who Code Mérida</string>
 
 
+    <!-- Speakers -->
+    <string name="speaker_1">Grecia Castaldi</string>
+    <string name="speaker_2">Yelmy Pech</string>
+    <string name="speaker_3">Yuliana Reyna</string>
+    <string name="speaker_4">Loyda Luis</string>
+    <string name="speaker_5">Silvia Fernández</string>
+    <string name="speaker_6">Ana Loyo</string>
+    <string name="speaker_7">Marlene Méndez</string>
+    <string name="speaker_8">Rocío Ceballos</string>
+    <string name="speaker_9">Aracelly Ramírez</string>
+    <string name="speaker_10">Erika López</string>
+    <string name="speaker_11">Mariel Soberanis</string>
+    <string name="speaker_12">Vanessa Herrera</string>
+    <string name="speaker_13">Flor González</string>
+    <string name="speaker_14">Mayra Trejo</string>
+    <string name="speaker_15">Alejandrina Caamal Solís</string>
+
 </resources>
