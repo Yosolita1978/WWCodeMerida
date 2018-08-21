@@ -1,6 +1,8 @@
 package wwcode.wwcodemerida;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -34,9 +36,21 @@ public class PeopleFragment extends Fragment {
                         "Mayra Trejo",
                         "Alejandrina Caamal Solís"};
 
-    int imageID = R.drawable.defaultspeaker;
-    int[]mImages = {imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID, imageID};
-
+    int[]mImages = {R.drawable.grecia_ajusted,
+                    R.drawable.yelmy_ajusted,
+                    R.drawable.yuliana_ajusted,
+                    R.drawable.loylis_ajusted,
+                    R.drawable.silvia_ajusted,
+                    R.drawable.ana_loyo_ajusted,
+                    R.drawable.marlene_mendez_ajusted,
+                    R.drawable.rocio_ajusted,
+                    R.drawable.aracelly_ajusted,
+                    R.drawable.erika_ajusted,
+                    R.drawable.mariel_ajusted,
+                    R.drawable.vanessa_ajusted,
+                    R.drawable.flor_ajusted,
+                    R.drawable.mayra,
+                    R.drawable.alejandrina};
 
     public PeopleFragment() {
         // Required empty public constructor
@@ -54,11 +68,15 @@ public class PeopleFragment extends Fragment {
         SpeakerAdapter mAdapter = new SpeakerAdapter(getActivity(), mNames, mImages);
         gridView.setAdapter(mAdapter);
 
+        final String currentUrl = "http://encuentro.wwcodemid.com/index.html#header3-1i";
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(getActivity(), mNames[position], Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(currentUrl));
+                startActivity(intent);
             }
         });
 
