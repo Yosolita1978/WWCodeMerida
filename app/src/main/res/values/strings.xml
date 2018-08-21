@@ -152,4 +152,11 @@
     <string name="speaker_14">Mayra Trejo</string>
     <string name="speaker_15">Alejandrina Caamal Solís</string>
 
+    <!-- Venue -->
+    <string name="venue_name">Auditorio de la Universidad Modelo</string>
+    <string name="venue_description">La Universidad Modelo, es una institución privada de educación superior que se encuentra localizada en Mérida, Yucatán, contando con dos campus alternos en Valladolid, Yucatán y en Chetumal, Quintana Roo. Actualmente, la Universidad Modelo imparte 22 carreras a nivel licenciatura y 10 a nivel posgrado en las áreas de Negocios, Salud, Arquitectura y Diseño, Derecho y Ciencias Políticas, Ingeniería y Humanidades.</string>
+    <string name="venue_sitio_web">http://www.unimodelo.edu.mx/merida/</string>
+    <string name="venue_google">Universidad Modelo, México 176, 97305 Mérida, Yuc., México</string>
+    <string name="btn_sitio_web">Sitio Web</string>
+    <string name="btn_maps">Cómo llegar</string>
 </resources>

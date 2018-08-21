@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VenueFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_venue_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/franjaheader"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:background="@drawable/logouniversidad"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tittle_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/franjaheader"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/dimen_8dp"
+            android:textStyle="bold"
+            android:background="@drawable/tittle_style"
+            android:textAllCaps="true"
+            android:textColor="@color/textOnAccent"
+            android:textSize="@dimen/font_medium"
+            android:textAlignment="center"
+            tools:text="@string/venue_name"
+            android:layout_marginTop="@dimen/dimen_8dp"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/info_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tittle_venue"
+            android:layout_marginTop="@dimen/dimen_8dp">
+
+            <TextView
+                android:id="@+id/info_venue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/text"
+                android:textSize="@dimen/font_medium"
+                tools:text="@string/venue_description" />
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_event"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+        <Button
+            android:id="@+id/button_web"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginStart="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/buttonstyle"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            tools:text="@string/btn_sitio_web" />
+
+        <Button
+            android:id="@+id/button_maps"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginStart="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_40dp"
+            android:layout_marginEnd="@dimen/dimen_40dp"
+            android:background="@drawable/buttonstyle"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            tools:text="@string/btn_maps" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
