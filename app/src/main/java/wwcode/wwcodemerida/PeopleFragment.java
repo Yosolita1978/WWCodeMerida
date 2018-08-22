@@ -1,6 +1,7 @@
 package wwcode.wwcodemerida;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -20,37 +21,9 @@ public class PeopleFragment extends Fragment {
 
     GridView gridView;
 
-    String[] mNames = {"Grecia Castaldi",
-                        "Yelmy Pech",
-                        "Yuliana Reyna",
-                        "Loyda Luis",
-                        "Silvia Fernández",
-                        "Ana Loyo",
-                        "Marlene Méndez",
-                        "Rocío Ceballos",
-                        "Aracelly Ramírez",
-                        "Erika López",
-                        "Mariel Soberanis",
-                        "Vanessa Herrera",
-                        "Flor González",
-                        "Mayra Trejo",
-                        "Alejandrina Caamal Solís"};
+    Context mContext;
 
-    int[]mImages = {R.drawable.grecia_ajusted,
-                    R.drawable.yelmy_ajusted,
-                    R.drawable.yuliana_ajusted,
-                    R.drawable.loylis_ajusted,
-                    R.drawable.silvia_ajusted,
-                    R.drawable.ana_loyo_ajusted,
-                    R.drawable.marlene_mendez_ajusted,
-                    R.drawable.rocio_ajusted,
-                    R.drawable.aracelly_ajusted,
-                    R.drawable.erika_ajusted,
-                    R.drawable.mariel_ajusted,
-                    R.drawable.vanessa_ajusted,
-                    R.drawable.flor_ajusted,
-                    R.drawable.mayra,
-                    R.drawable.alejandrina};
+
 
     public PeopleFragment() {
         // Required empty public constructor
@@ -63,9 +36,42 @@ public class PeopleFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View rootView = inflater.inflate(R.layout.fragment_people, container, false);
+        mContext = inflater.getContext();
         gridView = (GridView)rootView.findViewById(R.id.grid_speakers);
 
-        SpeakerAdapter mAdapter = new SpeakerAdapter(getActivity(), mNames, mImages);
+        final String[] mNames = {getResources().getString(R.string.speaker_1),
+                getResources().getString(R.string.speaker_2),
+                getResources().getString(R.string.speaker_3),
+                getResources().getString(R.string.speaker_4),
+                getResources().getString(R.string.speaker_5),
+                getResources().getString(R.string.speaker_6),
+                getResources().getString(R.string.speaker_7),
+                getResources().getString(R.string.speaker_8),
+                getResources().getString(R.string.speaker_9),
+                getResources().getString(R.string.speaker_10),
+                getResources().getString(R.string.speaker_11),
+                getResources().getString(R.string.speaker_12),
+                getResources().getString(R.string.speaker_13),
+                getResources().getString(R.string.speaker_14),
+                getResources().getString(R.string.speaker_15)};
+
+        final int[]mImages = {R.drawable.grecia_ajusted,
+                R.drawable.yelmy_ajusted,
+                R.drawable.yuliana_ajusted,
+                R.drawable.loylis_ajusted,
+                R.drawable.silvia_ajusted,
+                R.drawable.ana_loyo_ajusted,
+                R.drawable.marlene_mendez_ajusted,
+                R.drawable.rocio_ajusted,
+                R.drawable.aracelly_ajusted,
+                R.drawable.erika_ajusted,
+                R.drawable.mariel_ajusted,
+                R.drawable.vanessa_ajusted,
+                R.drawable.flor_ajusted,
+                R.drawable.mayra,
+                R.drawable.alejandrina};
+
+        SpeakerAdapter mAdapter = new SpeakerAdapter(mContext, mNames, mImages);
         gridView.setAdapter(mAdapter);
 
         final String currentUrl = "http://encuentro.wwcodemid.com/index.html#header3-1i";

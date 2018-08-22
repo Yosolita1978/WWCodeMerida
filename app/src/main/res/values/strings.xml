@@ -28,7 +28,7 @@
     <string name="about">Women Who Code es una organización sin fines de lucro, dedicada a inspirar a mujeres para introducirse y  sobresalir en el área de tecnologías de la información.\n\nEn Mérida, comenzamos las actividades el 4 de Octubre del 2014. A partir de esa fecha se han impartido talleres de baby steps, frontend, arduino, android, php, base de datos, liderazgo, social media y robótica para niñas, entre otros.</string>
     <string name="event_info">Nuestro evento de aniversario tendrá lugar el sábado 20 de Octubre.\n\nEl evento es gratuito, con cupo limitado, requerimos que te registres para asegurar tu lugar.</string>
     <string name="tittle_event">2do Encuentro de Mujeres en las Tecnologías</string>
-    <string name="urlMeetup">https://www.meetup.com/wwcodemerida/events/251651354/</string>
+    <string name="urlMeetup">https://www.eventbrite.com/e/registro-2do-encuentro-de-mujeres-en-las-tecnologias-49194798968?aff=erellivmlt</string>
 
     <!-- First Conference -->
     <string name="start_hour_event_one">08:00</string>
@@ -159,4 +159,16 @@
     <string name="venue_google">Universidad Modelo, México 176, 97305 Mérida, Yuc., México</string>
     <string name="btn_sitio_web">Sitio Web</string>
     <string name="btn_maps">Cómo llegar</string>
+
+    <!-- Sponsors -->
+    <string name="sponsor_1">https://www.mozilla.org/es-ES/</string>
+    <string name="sponsor_2">https://www.ensitech.com/</string>
+    <string name="sponsor_3">http://www.grouup.com.mx/</string>
+    <string name="sponsor_4">http://www.plenumsoft.com.mx/</string>
+    <string name="sponsor_5">http://www.kwantec.com/</string>
+    <string name="sponsor_6">http://softwarecamp.mx/</string>
+    <string name="sponsor_7">http://www.castamic.com/</string>
+    <string name="sponsor_8">https://nationalsoft.com.mx/</string>
+    <string name="sponsor_9">http://www.la-lupita.com.mx/</string>
+    <string name="sponsor_10">http://www.canieti.org/sedes/sedesureste/Contractosureste.aspx</string>
 </resources>
