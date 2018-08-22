@@ -4,18 +4,20 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
 import static wwcode.wwcodemerida.R.layout.item_grid_sponsor;
 
 public class SponsorAdapter extends BaseAdapter {
 
-    int[] mImages;
+    String[] mImages;
     String [] mUrls;
     private Context context;
 
-    public SponsorAdapter(Context context, int[] images, String[] urls) {
+    public SponsorAdapter(Context context, String[] images, String[] urls) {
 
         this.context = context;
         this.mImages = images;
@@ -48,7 +50,7 @@ public class SponsorAdapter extends BaseAdapter {
 
         ImageView imageView = (ImageView) convertView.findViewById(R.id.image_sponsor);
 
-        imageView.setImageResource(mImages[position]);
+        Picasso.get().load(mImages[position]).into(imageView);
 
         return convertView;
     }

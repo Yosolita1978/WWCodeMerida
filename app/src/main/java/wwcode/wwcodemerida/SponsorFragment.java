@@ -1,7 +1,6 @@
 package wwcode.wwcodemerida;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -10,10 +9,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import wwcode.wwcodemerida.R;
 
 
 /**
@@ -38,16 +35,16 @@ public class SponsorFragment extends Fragment {
         mContext = inflater.getContext();
         gridView = (GridView)rootView.findViewById(R.id.grid_sponsors);
 
-        final int[]mImages = {R.drawable.mozilla,
-                R.drawable.ensitech,
-                R.drawable.grouup,
-                R.drawable.plenum,
-                R.drawable.kwan,
-                R.drawable.softwarecamp,
-                R.drawable.castamic,
-                R.drawable.nationalsoft,
-                R.drawable.lalupita,
-                R.drawable.canieti};
+        final String[]mImagesUrl = {"http://encuentro.wwcodemid.com/assets/images/sponsors/mozilla.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/ensitech.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/GrouUp.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/plenum.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/kwan.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/SoftwareCamp.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/castamic.jpg",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/nationalsoft.png",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/LaLupita.jpg",
+                    "http://encuentro.wwcodemid.com/assets/images/sponsors/canieti.jpg"};
 
         final String[] mUrls = {getResources().getString(R.string.sponsor_1),
                 getResources().getString(R.string.sponsor_2),
@@ -61,7 +58,7 @@ public class SponsorFragment extends Fragment {
                 getResources().getString(R.string.sponsor_10)};
 
 
-        SponsorAdapter mAdapter = new SponsorAdapter(mContext, mImages, mUrls);
+        SponsorAdapter mAdapter = new SponsorAdapter(mContext, mImagesUrl, mUrls);
         gridView.setAdapter(mAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
