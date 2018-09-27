@@ -10,7 +10,7 @@ public class AllConferenceList {
 
     // Initial instance
     private AllConferenceList(Context context) {
-        mConferences = new Conference[13];
+        mConferences = new Conference[14];
 
         String conferenceOneHour = context.getResources().getString(R.string.start_hour_event_one);
         String conferenceEndHourOne = context.getResources().getString(R.string.end_hour_event_one);
@@ -141,6 +141,16 @@ public class AllConferenceList {
 
         Conference conference13 = new Conference(conference13Hour, conference13EndHour, conference13Author, conference13Name, conference13Desc);
         mConferences[12] = conference13;
+
+        String conference14Hour = context.getResources().getString(R.string.start_hour_event_14);
+        String conference14EndHour = context.getResources().getString(R.string.end_hour_event_14);
+        String conference14Author = context.getResources().getString(R.string.author_event_14);
+        String conference14Name = context.getResources().getString(R.string.name_event_14);
+        String conference14Desc = context.getResources().getString(R.string.description_event_14);
+
+
+        Conference conference14 = new Conference(conference14Hour, conference14EndHour, conference14Author, conference14Name, conference14Desc);
+        mConferences[13] = conference14;
     }
 
     // Method to grab a place for index. Used to change the intents
