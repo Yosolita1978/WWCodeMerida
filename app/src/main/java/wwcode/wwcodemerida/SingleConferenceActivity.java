@@ -2,8 +2,10 @@ package wwcode.wwcodemerida;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -55,6 +57,11 @@ public class SingleConferenceActivity extends AppCompatActivity {
         //SetUp the author of the current conference
         TextView authorconference = findViewById(R.id.single_conference_author);
         authorconference.setText(currentConference.getConferenceAuthor());
+
+
+        //SetUp the type of the current conference
+        TextView typeconference = findViewById(R.id.single_conference_type);
+        typeconference.setText(currentConference.getConferenceType());
 
         //SetUp the description of the current conference
         TextView descconference = findViewById(R.id.single_conference_desc);

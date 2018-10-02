@@ -5,6 +5,8 @@ public class Conference {
 
     private String mConferenceName;
 
+    private String mConferenceType;
+
     private String mConferenceStartHour;
 
     private String mConferenceEndHour;
@@ -25,10 +27,11 @@ public class Conference {
 
     // The real construtor of the Conference Object
 
-    public Conference(String conferenceStartHour, String conferenceEndHour, String conferenceAuthor, String conferenceName, String conferenceDescription ) {
+    public Conference(String conferenceStartHour, String conferenceEndHour, String conferenceAuthor, String conferenceType, String conferenceName, String conferenceDescription ) {
         mConferenceStartHour = conferenceStartHour;
         mConferenceEndHour = conferenceEndHour;
         mConferenceAuthor = conferenceAuthor;
+        mConferenceType = conferenceType;
         mConferenceName = conferenceName;
         mConferenceDescription = conferenceDescription;
     }
@@ -55,6 +58,14 @@ public class Conference {
      */
     public String getConferenceEndHour(){
         return mConferenceEndHour;
+    }
+
+    /**
+     * Getter method for Conference Type
+     * @return conferenceType
+     */
+    public String getConferenceType(){
+        return mConferenceType;
     }
 
     /**

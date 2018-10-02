@@ -24,16 +24,14 @@ public class ConferenceFragmentPagerAdapter extends FragmentPagerAdapter {
             return new ProgramFragment();
         } else if (position == 2){
             return new PeopleFragment();
-        } else if (position == 3) {
-            return new VenueFragment();
         } else{
-            return new SponsorFragment();
+            return new VenueFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 
     @Override
@@ -44,11 +42,8 @@ public class ConferenceFragmentPagerAdapter extends FragmentPagerAdapter {
             return mContext.getString(R.string.program);
         } else if (position == 2) {
             return mContext.getString(R.string.people);
-        }else if (position == 3) {
-            return mContext.getString(R.string.venue);
-
         }else {
-            return mContext.getString(R.string.sponsors);
+            return mContext.getString(R.string.venue);
         }
     }
 }

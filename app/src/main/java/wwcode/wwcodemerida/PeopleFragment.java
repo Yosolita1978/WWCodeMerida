@@ -11,7 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 
 /**
@@ -33,60 +36,42 @@ public class PeopleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-
         View rootView = inflater.inflate(R.layout.fragment_people, container, false);
-        mContext = inflater.getContext();
-        gridView = (GridView)rootView.findViewById(R.id.grid_speakers);
 
-        final String[] mNames = {getResources().getString(R.string.speaker_1),
-                getResources().getString(R.string.speaker_2),
-                getResources().getString(R.string.speaker_3),
-                getResources().getString(R.string.speaker_4),
-                getResources().getString(R.string.speaker_5),
-                getResources().getString(R.string.speaker_6),
-                getResources().getString(R.string.speaker_7),
-                getResources().getString(R.string.speaker_8),
-                getResources().getString(R.string.speaker_9),
-                getResources().getString(R.string.speaker_10),
-                getResources().getString(R.string.speaker_11),
-                getResources().getString(R.string.speaker_12),
-                getResources().getString(R.string.speaker_13),
-                getResources().getString(R.string.speaker_14),
-                getResources().getString(R.string.speaker_15)};
 
-        final int[]mImages = {R.drawable.grecia_ajusted,
-                R.drawable.yelmy_ajusted,
-                R.drawable.yuliana_ajusted,
-                R.drawable.loylis_ajusted,
-                R.drawable.silvia_ajusted,
-                R.drawable.ana_loyo_ajusted,
-                R.drawable.marlene_mendez_ajusted,
-                R.drawable.rocio_ajusted,
-                R.drawable.aracelly_ajusted,
-                R.drawable.erika_ajusted,
-                R.drawable.mariel_ajusted,
-                R.drawable.vanessa_ajusted,
-                R.drawable.flor_ajusted,
-                R.drawable.mayra,
-                R.drawable.alejandrina};
+        //Start the allConferences instance
+        AllSpeakerList allspeakers = AllSpeakerList.getAllSpeakers(getContext());
+        ArrayList<Speaker> speakersArrayList = new ArrayList<Speaker>();
+        for(int i = 0; i < allspeakers.getLeght(); i++){
+            speakersArrayList.add(allspeakers.getSpeakerbyIndex(i));
+        }
 
-        SpeakerAdapter mAdapter = new SpeakerAdapter(mContext, mNames, mImages);
-        gridView.setAdapter(mAdapter);
 
-        final String currentUrl = "http://encuentro.wwcodemid.com/index.html#header3-1i";
+        //Start the Speakeradapter and the ListView
+        SpeakerAdapter mAdapter = new SpeakerAdapter(getContext(), speakersArrayList);
 
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        ListView mListView = (ListView) rootView.findViewById(R.id.list);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                //Using bundle to send one extra with the intent
 
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(currentUrl));
+                Intent intent = new Intent(getActivity(), SingleSpeakerActivity.class);
+                Bundle extras = new Bundle();
+                extras.putInt("indexSpeakSelected", position);
+                intent.putExtras(extras);
+//                Log.d("LOG", Integer.toString(position));
                 startActivity(intent);
             }
         });
 
-        return rootView;
+        mListView.setAdapter(mAdapter);
+
+        return  rootView;
+
     }
 
 }

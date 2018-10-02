@@ -16,13 +16,15 @@
     <!-- Temporal strings to view the fragments -->
     <string name="hello_sponsors_fragment">Hello Sponsors fragment</string>
 
-    <string name="conference">WWCode Mérida</string>
+    <string name="conference">Event</string>
     <string name="program">Program</string>
     <string name="people">Speakers</string>
     <string name="venue">Venue</string>
     <string name="sponsors">Sponsors</string>
     <string name="registro">Registro</string>
     <string name="spanish">Spanish</string>
+    <string name="conference_label">Conference</string>
+    <string name="linkedin_label">Contacto</string>
 
     <!-- Info about the event -->
     <string name="about">Women Who Code es una organización sin fines de lucro, dedicada a inspirar a mujeres para introducirse y  sobresalir en el área de tecnologías de la información.\n\nEn Mérida, comenzamos las actividades el 4 de Octubre del 2014. A partir de esa fecha se han impartido talleres de baby steps, frontend, arduino, android, php, base de datos, liderazgo, social media y robótica para niñas, entre otros.</string>
@@ -49,7 +51,7 @@
     <!-- Third Conference -->
     <string name="start_hour_event_3">10:00</string>
     <string name="end_hour_event_3">10:30</string>
-    <string name="type_event_3">El mundo de la tecnología, un lugar "difícil" para las mujeres</string>
+    <string name="type_event_3">Keynote</string>
     <string name="name_event_3">El mundo de la tecnología, un lugar "difícil" para las mujeres</string>
     <string name="description_event_3">Contar mi experiencia de cómo, por miedo a no poder y por estereotipos, decidí no estudiar ingeniería en sistemas, y qué fue lo que me llevó a finalmente sí dedicarme a ello.</string>
     <string name="author_event_3">Maria Fernanda Bojorquez Cavazos</string>
@@ -57,15 +59,15 @@
     <!-- Four Conference -->
     <string name="start_hour_event_4">10:30</string>
     <string name="end_hour_event_4">11:00</string>
-    <string name="type_event_4">Todos los caminos conducen a la programación (o al menos deberían).</string>
-    <string name="name_event_4">Todos los  caminos conducen a la programación (o al menos deberían).</string>
+    <string name="type_event_4">Keynote</string>
+    <string name="name_event_4">Todos los  caminos conducen a la programación.</string>
     <string name="description_event_4">El objetivo principal de mi ponencia es mostrar cómo se puede hacer un primer proyecto en Android usando básicos conocimientos y dejando de lado conceptos más complejos como bases de datos o servidores. En el desarrollo de mi ponencia también hablaré de cómo muchos caminos conducen a la programación y hay muchas formas de acercarse al desarrollo de software</string>
-    <string name="author_event_4">Cristina Rodríguez </string>
+    <string name="author_event_4">Cristina Rodríguez</string>
 
     <!-- Five Conference -->
     <string name="start_hour_event_5">11:00</string>
     <string name="end_hour_event_5">11:30</string>
-    <string name="type_event_5">Maximiza tu carrera profesional con Salesforce</string>
+    <string name="type_event_5">Keynote</string>
     <string name="name_event_5">Maximiza tu carrera profesional con Salesforce</string>
     <string name="description_event_5">Salesforce es una tecnología Cloud que está creciendo de forma exponencial gracias a los beneficios y la rapidez de implementación, la oportunidad de crecimiento profesional es muy grande. Te invito a conocer que y quien es Salesforce y como podrás maximizar tu carrera con esta plataforma.</string>
     <string name="author_event_5">Grissell Cabrera Suarez</string>
@@ -73,7 +75,7 @@
     <!-- Six Conference -->
     <string name="start_hour_event_6">11:30</string>
     <string name="end_hour_event_6">12:00</string>
-    <string name="type_event_6">Efectos sociales del Code Review</string>
+    <string name="type_event_6">Keynote</string>
     <string name="name_event_6">Efectos sociales del Code Review</string>
     <string name="description_event_6">Descripción breve sobre que es el code review, mención de algunos de los impactos que tiene este en los developers y razones por las que deberíamos implementarlo. La base de mi información es de las experiencias que he tenido y de los libros: Clean Code: A Hand Book of Agile Software Craftsmanship, Best Kept Secrets of Peer Code Review. </string>
     <string name="author_event_6">Dulce Karina González Láriz</string>
@@ -81,8 +83,8 @@
     <!-- Seven Conference -->
     <string name="start_hour_event_7">12:00</string>
     <string name="end_hour_event_7">13:00</string>
-    <string name="type_event_7">Mesa Panel: Comunidades</string>
-    <string name="name_event_7">Mesa Panel: Comunidades</string>
+    <string name="type_event_7">Mesa Panel</string>
+    <string name="name_event_7">Mesa Panel: “Hablemos de comunidades tecnológicas”</string>
     <string name="description_event_7">Moderadora: Grisel Ancona</string>
     <string name="author_event_7">Grecia Castaldi, Loyda Luis, Ana Loyo, Yuliana Reyna, Sol Estrada</string>
 
@@ -97,7 +99,7 @@
     <!-- Nine Conference -->
     <string name="start_hour_event_9">14:00</string>
     <string name="end_hour_event_9">14:30</string>
-    <string name="type_event_9">The Web Design Process in Agile Methodologies</string>
+    <string name="type_event_9">Keynote</string>
     <string name="name_event_9">The Web Design Process in Agile Methodologies</string>
     <string name="description_event_9">Mi tema habla de la adaptación del proceso de diseño web dentro de las metodologías ágiles, sus ventajas y desventajas, y cómo éstas pueden afectar la velocidad, eficiencia y el resultado final de un producto</string>
     <string name="author_event_9">María José Quirino Andrade</string>
@@ -105,60 +107,143 @@
     <!-- Ten Conference -->
     <string name="start_hour_event_10">14:30</string>
     <string name="end_hour_event_10">15:30</string>
-    <string name="type_event_10">Mesa panel: Reclutadores</string>
-    <string name="name_event_10">Mesa panel: reclutadores</string>
+    <string name="type_event_10">Mesa panel</string>
+    <string name="name_event_10">Mesa panel: “Oportunidades laborales en industria TI” </string>
     <string name="description_event_10">Moderadora: Grisel Ancona</string>
-    <string name="author_event_10">Reclutadores de nuestros patrocinadores</string>
+    <string name="author_event_10">SoftwareHouse, TangoSource, DedaGroup México</string>
 
     <!-- Eleven Conference -->
     <string name="start_hour_event_11">15:30</string>
     <string name="end_hour_event_11">16:00</string>
-    <string name="type_event_11">Tema relacionado a AI</string>
+    <string name="type_event_11">Keynote</string>
     <string name="name_event_11">Tema relacionado a AI</string>
     <string name="description_event_11">Por el momento no tenemos una descripción de este evento. </string>
-    <string name="author_event_11">Vanessa Herrera</string>
+    <string name="author_event_11">Vanessa Herrera Gutierrez</string>
 
     <!-- Twelve Conference -->
     <string name="start_hour_event_12">16:00</string>
     <string name="end_hour_event_12">16:30</string>
-    <string name="type_event_12">Título pendiente</string>
-    <string name="name_event_12">Título pendiente</string>
-    <string name="description_event_12">Por el momento no tenemos una descripción de este evento. </string>
-    <string name="author_event_12">Alejandra Bustos</string>
+    <string name="type_event_12">Keynote</string>
+    <string name="name_event_12">Saca tu potencial contribuyendo a proyectos Open Source</string>
+    <string name="description_event_12">Una de las ventajas de contribuir a proyectos open source es que te permite desarrollar tus habilidades de comunicación, colaboración y programación mientras sigues aprendiendo. En esta charla te daré algunos tips para sacarle el máximo provecho a esta experiencia, también te diré como hacer tú primera contribución e incluso cómo hacer que te paguen por tus contribuciones.</string>
+    <string name="author_event_12">Alejandra Bustos Nieto</string>
 
     <!-- Thirteen Conference -->
     <string name="start_hour_event_13">16:30</string>
-    <string name="end_hour_event_13">17:00</string>
-    <string name="type_event_13">Aprendizaje automático, ¿moda o necesidad?</string>
+    <string name="end_hour_event_13">16:40</string>
+    <string name="type_event_13">Lightning Talk</string>
     <string name="name_event_13">Aprendizaje automático, ¿moda o necesidad?</string>
     <string name="description_event_13">En la actualidad el aprendizaje automático está de moda, todos quieren implementarlos pero hasta qué punto es una necesidad. En esta charala analizaremos algunos casos para que generes tu propia opinión al respecto.</string>
     <string name="author_event_13">Ana Luz Loyo Páez</string>
 
     <!-- Fourteen Conference -->
-    <string name="start_hour_event_14">17:00</string>
-    <string name="end_hour_event_14">17:30</string>
-    <string name="type_event_14">Cierre</string>
-    <string name="name_event_14">Cierre</string>
-    <string name="description_event_14">Agradecimiento a los asistentes, ponentes, patrocinadores, invitados. Posterior se hará el corte del pastel conmemorativo al tercer aniversario de la comunidad en Mérida</string>
-    <string name="author_event_14">Women Who Code Mérida</string>
+    <string name="start_hour_event_14">16:40</string>
+    <string name="end_hour_event_14">16:50</string>
+    <string name="type_event_14">Lightning Talk</string>
+    <string name="name_event_14">La historia de las mujeres en la tecnología</string>
+    <string name="description_event_14">Vamos hablar de todas aquellas mujeres q nos han dejado su legado en la tecnología</string>
+    <string name="author_event_14">Sol Estrada</string>
+
+    <!-- Fifteen Conference -->
+    <string name="start_hour_event_15">16:50</string>
+    <string name="end_hour_event_15">17:00</string>
+    <string name="type_event_15">Lightning Talk</string>
+    <string name="name_event_15">Design Thinking para nuevos equipos de desarrollo</string>
+    <string name="description_event_15">Aprende a incorporar un enfoque de Pensamiento de Diseño (Design Thinking) para proporcionar una solución que solucione problemas rápidamente y gracias a ello poder crear una Experiencia de Usuario convincente, permitiendo que los nuevos equipos de desarrollo se identifiquen con el usuario antes de que comience cualquier etapa de desarrollo</string>
+    <string name="author_event_15">Maryl Gonzalez</string>
+
+    <!-- Sixteen Conference -->
+    <string name="start_hour_event_16">17:00</string>
+    <string name="end_hour_event_16">17:30</string>
+    <string name="type_event_16">Cierre</string>
+    <string name="name_event_16">Cierre</string>
+    <string name="description_event_16">Agradecimiento a los asistentes, ponentes, patrocinadores, invitados. Posterior se hará el corte del pastel conmemorativo al tercer aniversario de la comunidad en Mérida</string>
+    <string name="author_event_16">Women Who Code Mérida</string>
 
 
     <!-- Speakers -->
-    <string name="speaker_1">Grecia Castaldi</string>
-    <string name="speaker_2">Yelmy Pech</string>
-    <string name="speaker_3">Yuliana Reyna</string>
-    <string name="speaker_4">Loyda Luis</string>
-    <string name="speaker_5">Silvia Fernández</string>
-    <string name="speaker_6">Ana Loyo</string>
-    <string name="speaker_7">Marlene Méndez</string>
-    <string name="speaker_8">Rocío Ceballos</string>
-    <string name="speaker_9">Aracelly Ramírez</string>
-    <string name="speaker_10">Erika López</string>
-    <string name="speaker_11">Mariel Soberanis</string>
-    <string name="speaker_12">Vanessa Herrera</string>
-    <string name="speaker_13">Flor González</string>
-    <string name="speaker_14">Mayra Trejo</string>
-    <string name="speaker_15">Alejandrina Caamal Solís</string>
+
+    <!-- First Speaker -->
+    <string name="speaker_name_1">Maria Fernanda Bojorquez Cavazos</string>
+    <string name="speaker_job_1">Licenciada en Animación y Arte Digital</string>
+    <string name="speaker_bio_1">Mafer estudió ""Animación y Arte Digital"" en el Tec de Monterrey en Guadalajara. Descubrió su gusto por la programación durante su intercambio en Vancouver Film School, donde realizó el programa "Programming for Games, Web and Mobile". Actualmente trabaja como desarrolladora de aplicaciones para iOS en Handy, ha realizado también aplicaciones para Android y un poco de desarrollo Web.</string>
+    <string name="speaker_conference_1">El mundo de la tecnología, un lugar "difícil" para las mujeres</string>
+    <string name="speaker_LinkedIn_1">https://www.linkedin.com/in/maferbojorquez</string>
+    <string name="speaker_url_img_1">https://s3.amazonaws.com/wwcphotos.yosola.co/mafer_bojorquez.png</string>
+
+    <!-- Second Speaker -->
+    <string name="speaker_name_2">Cristina Rodríguez</string>
+    <string name="speaker_job_2">Ingeniera de Software</string>
+    <string name="speaker_bio_2">Mi nombre es Cristina Rodríguez y soy una periodista que hace 2 años decidió cambiar de enfoque en su carrera y dedicarse a la programación, enfocada al trabajo en front-end y en el desarrollo de apps. Actualmente vivo en Seattle y estoy terminando la 2018 Scholarship con Google para Desarrollo de Aplicaciones para Android.</string>
+    <string name="speaker_conference_2">Todos los caminos conducen a la programación</string>
+    <string name="speaker_LinkedIn_2">https://www.linkedin.com/in/crissrodriguez</string>
+    <string name="speaker_url_img_2">https://s3.amazonaws.com/wwcphotos.yosola.co/criss_rodriguez.png</string>
+
+    <!-- Third Speaker -->
+    <string name="speaker_name_3">Grissell Cabrera Suarez</string>
+    <string name="speaker_job_3">Ingeniera en Ciencias de la Computación</string>
+    <string name="speaker_bio_3">Ingeniera en Ciencias de la Computación con mas de 13 años de experiencia en el área de TI y cerca de 10 años como consultora de procesos y tecnología, he trabajo en proyectos con clientes Nacionales e Internacionales de diferentes industrias. Actualmente soy Arquitecto de Soluciones en Blein Consulting. Cuento con 5 certificaciones en la tecnología de Salesforce y soy líder de la comunidad de Usuarios de Salesforce para Monterrey</string>
+    <string name="speaker_conference_3">Maximiza tu carrera profesional con Salesforce</string>
+    <string name="speaker_LinkedIn_3">https://www.linkedin.com/in/grissellcs/</string>
+    <string name="speaker_url_img_3">https://s3.amazonaws.com/wwcphotos.yosola.co/grissell_cabrera.png</string>
+
+    <!-- Four Speaker -->
+    <string name="speaker_name_4">Dulce Karina González Láriz</string>
+    <string name="speaker_job_4">Ingeniera en Computación Inteligente</string>
+    <string name="speaker_bio_4">Soy Web Developer en TangoSource desde hace casi 1 año, he trabajado con JavaScript(Node, AngularJS, Angular), RoR, PHP y actualmente estoy aprendiendo React, mi meta es tener buenos skills de programación en lugar de tener skills de un solo lenguaje en específico, trato de siempre estar aprendiendo. Trabajo remotamente desde Aguascalientes (home office lml ), terminé la carrera Ing. en Computación Inteligente en 2016 en la Universidad Autónoma de Aguascalientes,  no tengo bendiciones, bueno si! un perro chihuahua! y me gusta la fotografía.</string>
+    <string name="speaker_conference_4">Efectos sociales del Code Review</string>
+    <string name="speaker_LinkedIn_4">https://www.linkedin.com/in/dulcelariz/</string>
+    <string name="speaker_url_img_4">https://s3.amazonaws.com/wwcphotos.yosola.co/dulce_karina.png</string>
+
+    <!-- Five Speaker -->
+    <string name="speaker_name_5">María José Quirino Andrade</string>
+    <string name="speaker_job_5">Licenciada en Diseño Gráfico con Énfasis en Medios Digitales</string>
+    <string name="speaker_bio_5">Soy una diseñadora gráfica con énfasis en medios digitales. Actualmente trabajo como diseñadora web en la empresa TangoSource, donde colaboró con el equipo de desarrollo software para diseñar y crear soluciones digitales que buscan mejorar la calidad de vida de sus usuarios.</string>
+    <string name="speaker_conference_5">The Web Design Process in Agile Methodologies</string>
+    <string name="speaker_LinkedIn_5">https://www.linkedin.com/in/maría-josé-quirino-449532128</string>
+    <string name="speaker_url_img_5">https://s3.amazonaws.com/wwcphotos.yosola.co/maria_jose.png</string>
+
+    <!-- Six Speaker -->
+    <string name="speaker_name_6">Vanessa Herrera Gutierrez</string>
+    <string name="speaker_job_6">Ingeniero en Sistemas Computacionales </string>
+    <string name="speaker_bio_6">Ingeniero en Sistemas Computacionales por el Tecnológico de Mérida con especialidad en Bases de Datos. Graduada de la escuela de negocios de Stanford, del programa Go To Market – México. Miembro de la generación 2015 del programa de Plug and Play, una de las principales aceleradoras de negocios de Silicon Valley; donde se han acelerado productos como Paypal, Dropbox, etc. Miembro de la generación de startups del 2016 del Collision, uno de los principales eventos mundiales de exposición de las nuevas startups disruptivas como Uber, y Airbnb.</string>
+    <string name="speaker_conference_6">Inteligencia Artificial</string>
+    <string name="speaker_LinkedIn_6">https://www.linkedin.com/in/vaneherrera/</string>
+    <string name="speaker_url_img_6">https://s3.amazonaws.com/wwcphotos.yosola.co/vanessa.png</string>
+
+    <!-- Seven Speaker -->
+    <string name="speaker_name_7">Alejandra Bustos Nieto</string>
+    <string name="speaker_job_7">Ingeniera en Informática</string>
+    <string name="speaker_bio_7">Alejandra Bustos es desarrolladora de software y co-directora en Women Who Code Mexico City. Actualmente suma esfuerzos para reducir la brecha de género existente en áreas STEM, organizando eventos y talleres abiertos a la comunidad. Ama el desarrollo web, las comunidades y el open source</string>
+    <string name="speaker_conference_7">Saca tu potencial contribuyendo a proyectos Open Source</string>
+    <string name="speaker_LinkedIn_7">https://www.linkedin.com/in/alessbn/</string>
+    <string name="speaker_url_img_7">https://s3.amazonaws.com/wwcphotos.yosola.co/alejandra_bustos.png</string>
+
+    <!-- Eight Speaker -->
+    <string name="speaker_name_8">Sol Estrada</string>
+    <string name="speaker_job_8">Ingeniera en sistemas computacionales</string>
+    <string name="speaker_bio_8">Orgullosamente Michoacana, promotora de "las mujeres también podemos", ingeniera en sistemas computacionales, representante del nodo México de Agile Women y directora de Women Who Code Cdmx.</string>
+    <string name="speaker_conference_8">La historia de las mujeres en la tecnología</string>
+    <string name="speaker_LinkedIn_8">https://www.linkedin.com/in/alessbn/</string>
+    <string name="speaker_url_img_8">https://s3.amazonaws.com/wwcphotos.yosola.co/sol_estrada.png</string>
+
+    <!-- Nine Speaker -->
+    <string name="speaker_name_9">Ana Luz Loyo Páez</string>
+    <string name="speaker_job_9">Maestría en Comercio Electrónico</string>
+    <string name="speaker_bio_9">Desarrollador y Líder de Proyectos especializada en ingeniería de software y comercio electrónico freelance. Blogger. Capacitador independiente certificado por CONOCER. Catedrático de la Universidad Veracruzana Co-fundador @temachtianimx Mi lema: ¡La tecnología no duele!</string>
+    <string name="speaker_conference_9">Aprendizaje automático, ¿moda o necesidad?</string>
+    <string name="speaker_LinkedIn_9">https://www.linkedin.com/in/analuzloyo/</string>
+    <string name="speaker_url_img_9">https://s3.amazonaws.com/wwcphotos.yosola.co/ana_luz_loyo.png</string>
+
+    <!-- Ten Speaker -->
+    <string name="speaker_name_10">Maryl Gonzalez</string>
+    <string name="speaker_job_10">Lic. Diseño Digital</string>
+    <string name="speaker_bio_10">Enfocada en Product Design, Maryl Gonzalez es actualmente Co-fundadora y Lead Product Designer (UX/UI) en The App Chefs, LLC. y fundadora de TaleXa, una empresa mexicana dedicada a posicionar talento mexicano con empresas en el extranjero.</string>
+    <string name="speaker_conference_10">Design Thinking para nuevos equipos de desarrollo</string>
+    <string name="speaker_LinkedIn_10">https://www.linkedin.com/in/marylgonzalez/</string>
+    <string name="speaker_url_img_10">https://s3.amazonaws.com/wwcphotos.yosola.co/maryl_gonzalez.png</string>
+
+
 
     <!-- Venue -->
     <string name="venue_name">Auditorio de la Universidad Modelo</string>

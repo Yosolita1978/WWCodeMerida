@@ -5,15 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".PeopleFragment">
 
-    <GridView android:id="@+id/grid_speakers"
+    <ListView android:id="@+id/list"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/dimen_16dp"
-        android:layout_marginStart="@dimen/dimen_16dp"
-        android:layout_marginRight="@dimen/dimen_16dp"
-        android:layout_marginEnd="@dimen/dimen_16dp"
-        android:numColumns="2"
-        tools:listitem="@layout/item_grid_speaker"/>
+        tools:listitem="@layout/list_speakers"/>
 
 </FrameLayout>
