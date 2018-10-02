@@ -19,7 +19,6 @@ public class SingleSpeakerActivity extends AppCompatActivity {
 
     final Context context = this;
     Speaker currentSpeaker;
-    Conference currentConference;
 
 
     //Start the allspeaker list

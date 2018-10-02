@@ -133,4 +133,17 @@ public class AllSpeakerList {
         return mSpeakers.length;
     }
 
+    // Method to grab a speaker for name. Used to change the intents
+
+    public int findSpeakerbyName(String name) {
+        int speakerByAuthorIndex = -1;
+        for (int i = 0; i < mSpeakers.length; i++) {
+            if (mSpeakers[i].getSpeakerName().equals(name)) {
+                speakerByAuthorIndex = i;
+            }
+        }
+
+        return speakerByAuthorIndex;
+    }
+
 }

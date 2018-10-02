@@ -20,6 +20,9 @@ public class SingleConferenceActivity extends AppCompatActivity {
     //Start the allconferences list
     private AllConferenceList allconferencesList = AllConferenceList.getAllConferences(context);
 
+    //Start the allspeaker list
+    private AllSpeakerList allspeakerList = AllSpeakerList.getAllSpeakers(context);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class SingleConferenceActivity extends AppCompatActivity {
         }
 
         currentConference = conferenceArrayList.get(value);
+        final int speakerIndex = allspeakerList.findSpeakerbyName(currentConference.getConferenceAuthor());
 
         //Change the arrow from navigacion back to home
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -57,6 +61,18 @@ public class SingleConferenceActivity extends AppCompatActivity {
         //SetUp the author of the current conference
         TextView authorconference = findViewById(R.id.single_conference_author);
         authorconference.setText(currentConference.getConferenceAuthor());
+        // Invoke url upon button click
+        authorconference.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SingleConferenceActivity.this, SingleSpeakerActivity.class);
+                Bundle extras = new Bundle();
+                extras.putInt("indexSpeakSelected", speakerIndex);
+                intent.putExtras(extras);
+//                Log.d("LOG", Integer.toString(position));
+                startActivity(intent);
+            }
+        });
 
 
         //SetUp the type of the current conference
