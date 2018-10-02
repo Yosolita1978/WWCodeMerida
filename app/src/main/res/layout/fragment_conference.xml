@@ -3,97 +3,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ConferenceFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/franjaheader"
-            android:layout_marginTop="@dimen/dimen_8dp"
-            android:layout_marginBottom="@dimen/dimen_8dp"
-            android:layout_centerHorizontal="true"
-            android:layout_width="@dimen/image_layout_with"
-            android:layout_height="@dimen/imag_layout_height"
-            android:padding="@dimen/dimen_8dp"
-            android:background="@drawable/encuentromujeres"
-            android:scaleType="fitXY" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/colorPrimaryDark" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/basic_info"
+        <LinearLayout
+            android:id="@+id/profile_wwc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_below="@id/franjaheader"
-            android:layout_marginTop="85dp">
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/basic_info_text"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:padding="@dimen/dimen_16dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/text"
-                android:textSize="@dimen/font_small"
-                tools:text="@string/about" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp">
 
-        </android.support.v7.widget.CardView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_wwc"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="1dp"
+                    android:src="@drawable/encuentromujeres" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/event_about"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="60dp"
+                                android:textColor="@color/textOnPrimary"
+                                android:textSize="@dimen/font_medium"
+                                tools:text="@string/about"
+                                android:padding="@dimen/dimen_8dp"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/tittle_event"
+            android:id="@+id/event_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/basic_info"
-            android:layout_centerHorizontal="true"
-            android:padding="@dimen/dimen_8dp"
-            android:textStyle="bold"
-            android:background="@drawable/tittle_style"
-            android:textAllCaps="true"
-            android:textColor="@color/textOnAccent"
+            android:layout_below="@+id/profile_wwc"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:padding="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:textColor="@color/colorGreyDark"
             android:textSize="@dimen/font_medium"
-            android:textAlignment="center"
-            tools:text="@string/tittle_event"
-            android:layout_marginTop="@dimen/dimen_8dp"/>
+            tools:text="@string/event_info" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/info_event"
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/social_media"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tittle_event"
-            android:layout_marginTop="@dimen/dimen_8dp">
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/event_info"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
 
             <TextView
-                android:id="@+id/info_event_text"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:id="@+id/registro"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle"
                 android:padding="@dimen/dimen_16dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/text"
                 android:textAlignment="center"
-                android:textSize="@dimen/font_medium"
-                tools:text="@string/event_info" />
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_small"
+                android:textStyle="bold"
+                tools:text="@string/registro" />
 
-        </android.support.v7.widget.CardView>
-
-        <Button
-            android:id="@+id/button_start"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="@dimen/button_main_width"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/buttonstyle"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/font_medium"
-            android:textStyle="bold"
-            android:layout_below="@id/info_event"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            tools:text="@string/registro"
-            android:layout_marginBottom="@dimen/dimen_8dp"/>
+        </LinearLayout>
 
     </RelativeLayout>
 </ScrollView>

@@ -18,8 +18,7 @@ import android.widget.TextView;
 public class ConferenceFragment extends Fragment {
 
     // Initiating the TextView and the Button of the fragment
-    TextView aboutText, aboutEvent, tittleEvent;
-    Button registerBtn;
+    TextView aboutText, aboutEvent, registerBtn;
 
 
     public ConferenceFragment() {
@@ -33,16 +32,13 @@ public class ConferenceFragment extends Fragment {
         // Inflate the layout for this fragment
         View conferenceView = inflater.inflate(R.layout.fragment_conference, container, false);
 
-        aboutText = conferenceView.findViewById(R.id.basic_info_text);
+        aboutText = conferenceView.findViewById(R.id.event_about);
         aboutText.setText(R.string.about);
 
-        tittleEvent = conferenceView.findViewById(R.id.tittle_event);
-        tittleEvent.setText(R.string.tittle_event);
-
-        aboutEvent = conferenceView.findViewById(R.id.info_event_text);
+        aboutEvent = conferenceView.findViewById(R.id.event_info);
         aboutEvent.setText(R.string.event_info);
 
-        registerBtn = conferenceView.findViewById(R.id.button_start);
+        registerBtn = conferenceView.findViewById(R.id.registro);
         registerBtn.setText(getResources().getString(R.string.registro));
 
         final String currentMeetupUrl = getString(R.string.urlMeetup);
