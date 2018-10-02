@@ -243,7 +243,29 @@
     <string name="speaker_LinkedIn_10">https://www.linkedin.com/in/marylgonzalez/</string>
     <string name="speaker_url_img_10">https://s3.amazonaws.com/wwcphotos.yosola.co/maryl_gonzalez.png</string>
 
+    <!-- Eleven Speaker -->
+    <string name="speaker_name_11">Grecia Castaldi</string>
+    <string name="speaker_job_11">Ingeniera</string>
+    <string name="speaker_bio_11">Graduada de la Ingeniería en Diseño Gráfico Digital de la Universidad de Monterrey y de la Ingeniería en Sistemas de Información y Administración de la Universidad Tecnológica de Nagaoka, en Japón. Se desempeña como Directora de UX en Playful, consultora de Business Innovation en Monterrey. También es directora de la red de Monterrey de Women Who Code.</string>
+    <string name="speaker_conference_11">Mesa Panel: “Hablemos de comunidades tecnológicas”</string>
+    <string name="speaker_LinkedIn_11">https://www.facebook.com/grecia.castaldi</string>
+    <string name="speaker_url_img_11">https://s3.amazonaws.com/wwcphotos.yosola.co/grecia_castaldi.png</string>
 
+    <!-- Twelve Speaker -->
+    <string name="speaker_name_12">Loyda Florencia Luis Pineda</string>
+    <string name="speaker_job_12">Maestra en Ciencias en Ingeniería en Telecomunicaciones</string>
+    <string name="speaker_bio_12">Ingeniera en Comunicaciones y electrónica con Maestría en Ingeniería en Telecomunicaciones en el Instituto Politécnico Nacional con publicaciones en la IEEE y participación en congresos internacionales. Originaria de Juchitán, Oaxaca y enfocada a desarrollo de software desde hace varios años, ha trabajado en proyectos para varias empresas importantes entre ellos PEMEX, Instituto Mexicano del Petróleo y CFE, actualmente fullStack developer en SnapIoT (empresa en San Diego), fundadora de Oaxacode y directora de Women Who Code en México. Lenguajes de programación: Java, Javascript, Elixir, Python y Android. Ama programar, los modelos matemáticos, los algoritmos y los gatos.</string>
+    <string name="speaker_conference_12">Mesa Panel: “Hablemos de comunidades tecnológicas”</string>
+    <string name="speaker_LinkedIn_12">https://www.linkedin.com/in/loyda-pineda/</string>
+    <string name="speaker_url_img_12">https://s3.amazonaws.com/wwcphotos.yosola.co/loyda_pineda.png</string>
+
+    <!-- Thirteen Speaker -->
+    <string name="speaker_name_13">Yuliana Reyna</string>
+    <string name="speaker_job_13">Team Lead Developer</string>
+    <string name="speaker_bio_13">Software Enginering, amante del Open Source y la comida mexicana, cuando no esta programando, se dedica a contribuir en comunidades como Mozilla y Women Who Code CDMX, porque cree en un internet libre y bonito.</string>
+    <string name="speaker_conference_13">Mesa Panel: “Hablemos de comunidades tecnológicas”</string>
+    <string name="speaker_LinkedIn_13">https://www.linkedin.com/in/yulireyji/</string>
+    <string name="speaker_url_img_13">https://s3.amazonaws.com/wwcphotos.yosola.co/yuliana_reyna.png</string>
 
     <!-- Venue -->
     <string name="venue_name">Auditorio de la Universidad Modelo</string>

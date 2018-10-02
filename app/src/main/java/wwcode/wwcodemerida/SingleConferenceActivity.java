@@ -40,8 +40,8 @@ public class SingleConferenceActivity extends AppCompatActivity {
             conferenceArrayList.add(allconferencesList.getConferencebyIndex(i));
         }
 
+        // Check for the speaker index to used in the intent
         currentConference = conferenceArrayList.get(value);
-        final int speakerIndex = allspeakerList.findSpeakerbyName(currentConference.getConferenceAuthor());
 
         //Change the arrow from navigacion back to home
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -60,19 +60,27 @@ public class SingleConferenceActivity extends AppCompatActivity {
 
         //SetUp the author of the current conference
         TextView authorconference = findViewById(R.id.single_conference_author);
-        authorconference.setText(currentConference.getConferenceAuthor());
-        // Invoke url upon button click
-        authorconference.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SingleConferenceActivity.this, SingleSpeakerActivity.class);
-                Bundle extras = new Bundle();
-                extras.putInt("indexSpeakSelected", speakerIndex);
-                intent.putExtras(extras);
+
+        final int speakerIndex = allspeakerList.findSpeakerbyName(currentConference.getConferenceAuthor());
+        // If the index is -1 the conference doesn't have an speaker. Works for things like Lunch.
+        if(speakerIndex == -1){
+            authorconference.setText(currentConference.getConferenceAuthor());
+        } else{
+            authorconference.setText(currentConference.getConferenceAuthor());
+            // Invoke url upon button click
+            authorconference.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(SingleConferenceActivity.this, SingleSpeakerActivity.class);
+                    Bundle extras = new Bundle();
+                    extras.putInt("indexSpeakSelected", speakerIndex);
+                    intent.putExtras(extras);
 //                Log.d("LOG", Integer.toString(position));
-                startActivity(intent);
-            }
-        });
+                    startActivity(intent);
+                }
+            });
+        }
+
 
 
         //SetUp the type of the current conference

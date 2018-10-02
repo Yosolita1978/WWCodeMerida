@@ -46,7 +46,7 @@ public class SingleSpeakerActivity extends AppCompatActivity {
 
         currentSpeaker = speakerArrayList.get(value);
 
-        final int conferenceIndex = allConferenceList.findConferencebyAuthor(currentSpeaker.getSpeakerName());
+
 
 //        currentConference = allConferenceList.getConferencebyIndex(conferenceIndex);
 
@@ -73,19 +73,40 @@ public class SingleSpeakerActivity extends AppCompatActivity {
 
         //SetUp the conference Tittle
         TextView conferenceSpeaker = findViewById(R.id.conference_title);
-        conferenceSpeaker.setText(currentSpeaker.getSpeakerConference());
-        // Invoke url upon button click
-        conferenceSpeaker.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SingleSpeakerActivity.this, SingleConferenceActivity.class);
-                Bundle extras = new Bundle();
-                extras.putInt("indexConfSelected", conferenceIndex);
-                intent.putExtras(extras);
+
+        final int conferenceIndex = allConferenceList.findConferencebyAuthor(currentSpeaker.getSpeakerName());
+        // If the conferenceIndex is -1 the conference is the mesa debate, so use that index
+        if(conferenceIndex == -1){
+            final int mesaIndex = 6;
+            conferenceSpeaker.setText(currentSpeaker.getSpeakerConference());
+            // Invoke url upon button click
+            conferenceSpeaker.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(SingleSpeakerActivity.this, SingleConferenceActivity.class);
+                    Bundle extras = new Bundle();
+                    extras.putInt("indexConfSelected", mesaIndex);
+                    intent.putExtras(extras);
 //                Log.d("LOG", Integer.toString(position));
-                startActivity(intent);
-            }
-        });
+                    startActivity(intent);
+                }
+            });
+        } else {
+            conferenceSpeaker.setText(currentSpeaker.getSpeakerConference());
+            // Invoke url upon button click
+            conferenceSpeaker.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(SingleSpeakerActivity.this, SingleConferenceActivity.class);
+                    Bundle extras = new Bundle();
+                    extras.putInt("indexConfSelected", conferenceIndex);
+                    intent.putExtras(extras);
+//                Log.d("LOG", Integer.toString(position));
+                    startActivity(intent);
+                }
+            });
+        }
+
 
         //SetUp the LinkedIn Button
         TextView linkedInSpeaker = findViewById(R.id.linkedin);

@@ -10,7 +10,7 @@ public class AllSpeakerList {
 
     // Initial instance
     private AllSpeakerList(Context context) {
-        mSpeakers = new Speaker[10];
+        mSpeakers = new Speaker[13];
 
         String speakerName1 = context.getResources().getString(R.string.speaker_name_1);
         String speakerJob1 = context.getResources().getString(R.string.speaker_job_1);
@@ -111,6 +111,36 @@ public class AllSpeakerList {
 
         Speaker speakerTen = new Speaker(speakerName10, speakerJob10, speakerBio10, speakerConf10, speakerLink10, speakerImg10);
         mSpeakers[9] = speakerTen;
+
+        String speakerName11 = context.getResources().getString(R.string.speaker_name_11);
+        String speakerJob11 = context.getResources().getString(R.string.speaker_job_11);
+        String speakerBio11 = context.getResources().getString(R.string.speaker_bio_11);
+        String speakerConf11 = context.getResources().getString(R.string.speaker_conference_11);
+        String speakerLink11 = context.getResources().getString(R.string.speaker_LinkedIn_11);
+        String speakerImg11 = context.getResources().getString(R.string.speaker_url_img_11);
+
+        Speaker speakerEleven = new Speaker(speakerName11, speakerJob11, speakerBio11, speakerConf11, speakerLink11, speakerImg11);
+        mSpeakers[10] = speakerEleven;
+
+        String speakerName12 = context.getResources().getString(R.string.speaker_name_12);
+        String speakerJob12 = context.getResources().getString(R.string.speaker_job_12);
+        String speakerBio12 = context.getResources().getString(R.string.speaker_bio_12);
+        String speakerConf12 = context.getResources().getString(R.string.speaker_conference_12);
+        String speakerLink12 = context.getResources().getString(R.string.speaker_LinkedIn_12);
+        String speakerImg12 = context.getResources().getString(R.string.speaker_url_img_12);
+
+        Speaker speakerTwelve = new Speaker(speakerName12, speakerJob12, speakerBio12, speakerConf12, speakerLink12, speakerImg12);
+        mSpeakers[11] = speakerTwelve;
+
+        String speakerName13 = context.getResources().getString(R.string.speaker_name_13);
+        String speakerJob13 = context.getResources().getString(R.string.speaker_job_13);
+        String speakerBio13 = context.getResources().getString(R.string.speaker_bio_13);
+        String speakerConf13 = context.getResources().getString(R.string.speaker_conference_13);
+        String speakerLink13 = context.getResources().getString(R.string.speaker_LinkedIn_13);
+        String speakerImg13 = context.getResources().getString(R.string.speaker_url_img_13);
+
+        Speaker speakerThirteen = new Speaker(speakerName13, speakerJob13, speakerBio13, speakerConf13, speakerLink13, speakerImg13);
+        mSpeakers[12] = speakerThirteen;
 
     }
 
